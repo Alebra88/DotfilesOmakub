@@ -1,0 +1,76 @@
+{
+    "kite.showWelcomeNotificationOnStartup": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "diffEditor.maxFileSize": 2000,
+    "workbench.startupEditor": "none",
+    "python.formatting.provider": "none",
+    "files.autoSave": "onFocusChange",
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "MacSQL",
+            "database": "newspaper",
+            "username": "root",
+            "password": ""
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "X1 Lokal",
+            "database": "Starbucks",
+            "username": "root"
+        }
+    ],
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.sql": "sql-notebook"
+    },
+    "[sql]": {
+        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+    },
+    "sql-formatter.uppercase": true,
+    "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    "git.autofetch": true,
+    "workbench.activityBar.location": "top",
+    "editor.minimap.enabled": false,
+    "cloudcode.duetAI.project": "ab-specialemodelering-2024",
+    "diffEditor.codeLens": true,
+    "workbench.colorTheme": "Everforest Dark",
+    "Prettier-SQL.commaPosition": "before",
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode",
+    "notebook.defaultFormatter": "inferrinizzard.prettier-sql-vscode",
+    "notebook.formatOnCellExecution": true,
+    "notebook.formatOnSave.enabled": true,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "mssql.enableRichExperiences": true,
+    "editor.fontFamily": "FiraMono Nerd Font",
+    "workbench.settings.applyToAllProfiles": [
+        "editor.fontFamily"
+    ],
+    "editor.accessibilitySupport": "off",
+    "python.defaultInterpreterPath": "/home/alexander/.local/share/mise/installs/python/3.13.7/bin/python",
+    "terminal.integrated.fontFamily": "monospace"
+}

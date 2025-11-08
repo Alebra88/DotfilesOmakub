@@ -1,0 +1,6 @@
+{
+    "window.commandCenter": true,
+    "workbench.colorTheme": "Solarized Dark",
+    "files.autoSave": "afterDelay",
+    "workbench.iconTheme": "vs-minimal"
+}

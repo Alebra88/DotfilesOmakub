@@ -1,0 +1,35 @@
+# VS Code / Cursor
+config/Code/Cache/
+config/Code/CachedData/
+config/Code/CachedExtensions/
+config/Code/CachedExtensionVSIXs/
+config/Code/logs/
+config/Code/GPUCache/
+config/Code/Service Worker/
+config/Cursor/Cache/
+config/Cursor/CachedData/
+config/Cursor/CachedExtensions/
+config/Cursor/CachedExtensionVSIXs/
+config/Cursor/logs/
+config/Cursor/GPUCache/
+config/Cursor/Service Worker/
+
+# Application caches
+**/Cache/
+**/GPUCache/
+**/logs/
+
+# Large binary files
+*.vsix
+*.deb
+*.rpm
+*.AppImage
+*.dmg
+*.exe
+
+# Temporary files
+*.tmp
+*.log
+*~
+.DS_Store
+Thumbs.db
