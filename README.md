@@ -1,100 +1,52 @@
 # OmakubDotfiles
 
-Personal dotfiles and configuration settings for Ubuntu/Omakub setup.
+Personal dotfiles and configuration for Ubuntu/Omakub development environment.
 
-## Contents
+## What's Inside
 
-### Home Directory Files
-- `.bashrc` - Bash shell configuration
-- `.gitconfig` - Git configuration
-- `.profile` - Shell profile settings
-- `.inputrc` - Readline input configuration
-- `.XCompose` - Custom compose key sequences
+- **Shell configs**: `.bashrc`, `.profile`, `.inputrc`, `.gitconfig`
+- **Terminal**: Alacritty configuration
+- **Editors**: Neovim, VS Code, Cursor
+- **Tools**: btop, fastfetch
+- **Utility scripts**: System updates, MySQL fixes, chezmoi setup
 
-### Utility Scripts
-- `fix-mysql.sh` - MySQL troubleshooting script
-- `update-system.sh` - System update automation
-- `update_all.sh` - Comprehensive update script
-- `setup-chezmoi.sh` - Chezmoi dotfile manager setup
+## Quick Install
 
-### Config Directories
-- `alacritty/` - Alacritty terminal emulator configuration
-- `btop/` - System resource monitor configuration
-- `fastfetch/` - System information tool configuration
-- `Code/` - VS Code settings
-- `Cursor/` - Cursor editor settings
-- `nvim/` - Neovim configuration
-
-## Installation
-
-### Quick Setup
 ```bash
-# Clone this repository
 git clone git@github.com:Alebra88/OmakubDotfiles.git ~/OmakubDotfiles
-
-# Run the installation script
 cd ~/OmakubDotfiles
 ./install.sh
 ```
 
-### Manual Setup
+The script will backup your existing configs before applying new ones.
+
+## Manual Install
+
 ```bash
-# Backup existing files
-cp ~/.bashrc ~/.bashrc.backup
-cp ~/.gitconfig ~/.gitconfig.backup
-
-# Copy dotfiles to home directory
-cp home/.bashrc ~/
-cp home/.gitconfig ~/
-cp home/.profile ~/
-cp home/.inputrc ~/
-cp home/.XCompose ~/
-
-# Copy utility scripts
-cp home/*.sh ~/
-
-# Copy config directories
-mkdir -p ~/.config
+# Backup your current configs first!
 cp -r config/* ~/.config/
-
-# Reload shell configuration
-source ~/.bashrc
+cp home/.* ~/
 ```
 
-## Backup Current Settings
+## Update This Repo
 
-To update this repository with your current settings:
+To save your current configs:
 
 ```bash
-# Copy current dotfiles
-cp ~/.bashrc ~/.gitconfig ~/.profile ~/.inputrc ~/.XCompose ~/OmakubDotfiles/home/
-
-# Copy utility scripts
-cp ~/*.sh ~/OmakubDotfiles/home/
-
-# Copy config directories
-cp -r ~/.config/alacritty ~/.config/btop ~/.config/fastfetch ~/OmakubDotfiles/config/
-cp -r ~/.config/Code ~/.config/Cursor ~/.config/nvim ~/OmakubDotfiles/config/
-
-# Commit and push changes
 cd ~/OmakubDotfiles
+cp ~/.bashrc ~/.gitconfig ~/.profile ~/.inputrc ~/.XCompose home/
+cp -r ~/.config/{alacritty,btop,fastfetch,Code,Cursor,nvim} config/
 git add .
 git commit -m "Update dotfiles"
 git push
 ```
 
-## Notes
+## Requirements
 
-- Configuration files are organized into `home/` and `config/` directories
-- Scripts maintain their executable permissions
-- Review each file before applying to ensure compatibility with your system
-- Some configurations may require additional software to be installed
+These dotfiles work best with:
+- Ubuntu/Omakub
+- Alacritty
+- Neovim
+- btop, fastfetch
 
-## System Information
-
-These dotfiles are configured for Ubuntu/Omakub setup with the following tools:
-- Alacritty terminal
-- Neovim text editor
-- VS Code / Cursor editors
-- btop system monitor
-- fastfetch system info
+Review files before applying to ensure they match your setup.
