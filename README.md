@@ -55,6 +55,11 @@ Personal dotfiles and configuration for Ubuntu/Omakub development environment. T
   - Modern alternative to tmux
   - Custom layouts and key bindings
 
+- **yazi** - Blazing fast terminal file manager
+  - Vim-like keybindings
+  - Image preview support
+  - Catppuccin theme integration
+
 ### System Monitoring & Info
 - **btop** - Modern resource monitor
   - Theme: Catppuccin
@@ -102,7 +107,7 @@ If you prefer to cherry-pick specific configurations:
 ```bash
 # Backup your current configs first!
 mkdir -p ~/.config_backup
-cp -r ~/.config/{alacritty,btop,fastfetch,Code,Cursor,nvim,JetBrains,gh,lazygit,zellij,mise} ~/.config_backup/
+cp -r ~/.config/{alacritty,btop,fastfetch,Code,Cursor,nvim,JetBrains,gh,lazygit,zellij,mise,yazi} ~/.config_backup/
 cp ~/.bashrc ~/.gitconfig ~/.profile ~/.inputrc ~/.XCompose ~/.npmrc ~/.config_backup/
 cp ~/.config/{starship.toml,mimeapps.list} ~/.config_backup/
 
@@ -138,6 +143,7 @@ cp ~/.config/gh/config.yml config/gh/
 cp -r ~/.config/lazygit config/
 cp -r ~/.config/zellij config/
 cp -r ~/.config/mise config/
+cp -r ~/.config/yazi config/
 cp ~/.config/mimeapps.list config/
 
 # Commit and push
@@ -179,6 +185,7 @@ These dotfiles are configured for:
 - **lazygit** - Git terminal UI
 - **zellij** - Terminal multiplexer
 - **mise** - Runtime version manager
+- **yazi** - Terminal file manager
 
 Install missing applications:
 ```bash
@@ -217,6 +224,11 @@ sudo apt install zellij
 
 # mise
 curl https://mise.run | sh
+
+# yazi
+cargo install --locked yazi-fm
+# or using snap
+sudo snap install yazi
 ```
 
 ## Theme
@@ -266,6 +278,7 @@ OmakubDotfiles/
 │   ├── lazygit/            # lazygit TUI config
 │   ├── zellij/             # zellij multiplexer config
 │   ├── mise/               # mise version manager config
+│   ├── yazi/               # yazi file manager config
 │   ├── starship.toml       # Starship prompt config
 │   └── mimeapps.list       # Default file associations
 ├── home/

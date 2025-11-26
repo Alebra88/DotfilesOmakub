@@ -41,7 +41,7 @@ echo "  Scripts installed"
 echo "Installing config directories..."
 mkdir -p ~/.config
 
-for dir in alacritty btop fastfetch Code Cursor nvim JetBrains gh lazygit zellij mise; do
+for dir in alacritty btop fastfetch Code Cursor nvim JetBrains gh lazygit zellij mise yazi; do
     if [ -d "config/$dir" ]; then
         # Backup existing config
         if [ -d ~/.config/"$dir" ]; then

@@ -1,0 +1,114 @@
+# Yazi Theme Configuration
+# Catppuccin Macchiato theme for consistency with other tools
+
+[manager]
+cwd = { fg = "#8aadf4" }
+
+# Hovered
+hovered         = { fg = "#24273a", bg = "#8aadf4" }
+preview_hovered = { underline = true }
+
+# Find
+find_keyword  = { fg = "#eed49f", italic = true }
+find_position = { fg = "#c6a0f6", bg = "reset", italic = true }
+
+# Marker
+marker_selected = { fg = "#a6da95", bg = "#a6da95" }
+marker_copied   = { fg = "#eed49f", bg = "#eed49f" }
+marker_cut      = { fg = "#ed8796", bg = "#ed8796" }
+
+# Tab
+tab_active   = { fg = "#24273a", bg = "#8aadf4" }
+tab_inactive = { fg = "#cad3f5", bg = "#363a4f" }
+tab_width    = 1
+
+# Border
+border_symbol = "│"
+border_style  = { fg = "#5b6078" }
+
+# Highlighting
+syntect_theme = ""
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "#363a4f", bg = "#363a4f" }
+
+# Mode
+mode_normal = { fg = "#24273a", bg = "#8aadf4", bold = true }
+mode_select = { fg = "#24273a", bg = "#a6da95", bold = true }
+mode_unset  = { fg = "#24273a", bg = "#f5a97f", bold = true }
+
+# Progress
+progress_label  = { fg = "#ffffff", bold = true }
+progress_normal = { fg = "#8aadf4", bg = "#363a4f" }
+progress_error  = { fg = "#ed8796", bg = "#363a4f" }
+
+# Permissions
+permissions_t = { fg = "#a6da95" }
+permissions_r = { fg = "#eed49f" }
+permissions_w = { fg = "#ed8796" }
+permissions_x = { fg = "#8bd5ca" }
+permissions_s = { fg = "#5b6078" }
+
+[input]
+border   = { fg = "#8aadf4" }
+title    = {}
+value    = {}
+selected = { reversed = true }
+
+[completion]
+border   = { fg = "#8aadf4" }
+active   = { bg = "#363a4f" }
+inactive = {}
+
+# Icons
+icon_file = ""
+icon_folder = ""
+icon_command = ""
+
+[select]
+border   = { fg = "#8aadf4" }
+active   = { fg = "#c6a0f6" }
+inactive = {}
+
+[tasks]
+border  = { fg = "#8aadf4" }
+title   = {}
+hovered = { underline = true }
+
+[which]
+mask            = { bg = "#1e2030" }
+cand            = { fg = "#8bd5ca" }
+rest            = { fg = "#939ab7" }
+desc            = { fg = "#c6a0f6" }
+separator       = "  "
+separator_style = { fg = "#5b6078" }
+
+# File-specific styles
+[filetype]
+
+rules = [
+	# Images
+	{ mime = "image/*", fg = "#8bd5ca" },
+
+	# Videos
+	{ mime = "video/*", fg = "#eed49f" },
+	{ mime = "audio/*", fg = "#eed49f" },
+
+	# Archives
+	{ mime = "application/zip",             fg = "#c6a0f6" },
+	{ mime = "application/gzip",            fg = "#c6a0f6" },
+	{ mime = "application/x-tar",           fg = "#c6a0f6" },
+	{ mime = "application/x-bzip",          fg = "#c6a0f6" },
+	{ mime = "application/x-bzip2",         fg = "#c6a0f6" },
+	{ mime = "application/x-7z-compressed", fg = "#c6a0f6" },
+	{ mime = "application/x-rar",           fg = "#c6a0f6" },
+
+	# Documents
+	{ mime = "application/pdf", fg = "#ed8796" },
+
+	# Fallback
+	{ name = "*", fg = "#cad3f5" },
+	{ name = "*/", fg = "#8aadf4" }
+]
