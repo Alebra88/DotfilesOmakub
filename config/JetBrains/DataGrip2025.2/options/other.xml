@@ -1,0 +1,59 @@
+<application>
+  <component name="FileEditorProviderManager">{}</component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontSize" value="12.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+    <option name="experimentalSingleStripe" value="true" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "DG.SingleStripe.Customization2": "true",
+    "DG.SingleStripe.LastLocale": "en",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "7",
+    "LAST_EXTRACTOR_SCRIPTS_CLEANUP_VERSION/data/aggregators": "DB-252.26830.46",
+    "LAST_EXTRACTOR_SCRIPTS_CLEANUP_VERSION/data/extractors": "DB-252.26830.46",
+    "MarketplacePluginsSearchHistory": "/tag:Theme green\n/tag:Theme forest\n/tag:Theme for\n/tag:Theme forr\n/tag:Theme forrest",
+    "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
+    "RunOnceActivity.git.modal.commit.toggle": "true",
+    "RunOnceActivity.llm.onboarding.window.launcher.v7": "true",
+    "RunOnceActivity.reset.auto.reparse.settings.to.default": "true",
+    "SettingsSearchHistory": "font",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "database.notebook.setting.id": "cdcef674-bf41-497d-a5c4-5a937bb67878",
+    "enter_selection_count": "4",
+    "evlsprt3.252": "4",
+    "experimental.ui.used.version": "252.26830.46",
+    "fileTypeChangedCounter": "2",
+    "fontSizeToResetConsole": "13.0",
+    "fontSizeToResetEditor": "13.0",
+    "full.line.logs.sending.asked": "true",
+    "got.it.tooltip.Plugins Auto-Update": "1",
+    "got.it.tooltip.database.schema.control.got.it": "1",
+    "got.it.tooltip.settings.sync.in.settings": "1",
+    "got.it.tooltip.trial.state.widget.trial.started.got.it.id": "1",
+    "ide.islands.ab2": "true",
+    "ide.islands.show.feedback2": "done",
+    "ide.updates.previous.build.number": "DB-252.26830.46",
+    "input.method.disabler.muted": "true",
+    "last_opened_file_path": "/home/alexander/Documents/GitHub/Kaggle-Ecommerce-postreg-skv462",
+    "llm.installer.auto.activation.executed": "true",
+    "llm.installer.last.toolwindow.state": "AI_ASSISTANT",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "previousColorScheme": "_@user_Catppuccin Frappé",
+    "registry.to.advanced.settings.migration.build": "DB-252.26830.46",
+    "tab_selection_count": "1",
+    "trial.state.last.state": "ACTIVE"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/alexander/Documents/GitHub/Kaggle-Ecommerce-postreg-skv462"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.intellij.database.vfs.DbStorageFileType$Detector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+</application>
