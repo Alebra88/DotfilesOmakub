@@ -10,6 +10,8 @@ Personal dotfiles and configuration for Ubuntu/Omakub development environment. T
 - **`.inputrc`** - Readline configuration for terminal input
 - **`.gitconfig`** - Git configuration with GitHub CLI credential helpers
 - **`.XCompose`** - Custom keyboard compose sequences for special characters
+- **`.npmrc`** - NPM configuration (global package prefix)
+- **`starship.toml`** - Starship prompt configuration with custom formatting
 
 ### Terminal Emulator
 - **Alacritty** - GPU-accelerated terminal emulator
@@ -36,6 +38,23 @@ Personal dotfiles and configuration for Ubuntu/Omakub development environment. T
   - Database tool window settings
   - Custom code styles
 
+### Development Tools
+- **GitHub CLI (gh)** - GitHub command-line tool configuration
+  - Editor preferences and git protocol settings
+  - Custom aliases and preferences
+
+- **lazygit** - Terminal UI for git commands
+  - Custom key bindings and UI preferences
+  - Enhanced git workflow
+
+- **mise** - Development environment manager
+  - Runtime version management
+  - Tool version configuration
+
+- **zellij** - Terminal workspace/multiplexer
+  - Modern alternative to tmux
+  - Custom layouts and key bindings
+
 ### System Monitoring & Info
 - **btop** - Modern resource monitor
   - Theme: Catppuccin
@@ -43,6 +62,10 @@ Personal dotfiles and configuration for Ubuntu/Omakub development environment. T
 
 - **fastfetch** - Fast system information tool
   - Custom display configuration
+
+### System Configuration
+- **`mimeapps.list`** - Default applications for file types
+  - File associations and default handlers
 
 ### Utility Scripts
 Located in `home/`:
@@ -79,8 +102,9 @@ If you prefer to cherry-pick specific configurations:
 ```bash
 # Backup your current configs first!
 mkdir -p ~/.config_backup
-cp -r ~/.config/{alacritty,btop,fastfetch,Code,Cursor,nvim,JetBrains} ~/.config_backup/
-cp ~/.bashrc ~/.gitconfig ~/.profile ~/.inputrc ~/.XCompose ~/.config_backup/
+cp -r ~/.config/{alacritty,btop,fastfetch,Code,Cursor,nvim,JetBrains,gh,lazygit,zellij,mise} ~/.config_backup/
+cp ~/.bashrc ~/.gitconfig ~/.profile ~/.inputrc ~/.XCompose ~/.npmrc ~/.config_backup/
+cp ~/.config/{starship.toml,mimeapps.list} ~/.config_backup/
 
 # Install specific configs
 cp -r config/alacritty ~/.config/
@@ -97,7 +121,7 @@ To save your current system configurations back to this repo:
 cd ~/OmakubDotfiles
 
 # Copy home dotfiles
-cp ~/.bashrc ~/.gitconfig ~/.profile ~/.inputrc ~/.XCompose home/
+cp ~/.bashrc ~/.gitconfig ~/.profile ~/.inputrc ~/.XCompose ~/.npmrc home/
 
 # Copy config directories
 cp -r ~/.config/alacritty config/
@@ -107,6 +131,14 @@ cp -r ~/.config/Code/User/settings.json config/Code/User/
 cp -r ~/.config/Cursor/User/settings.json config/Cursor/User/
 cp -r ~/.config/nvim config/
 cp -r ~/.config/JetBrains/DataGrip2025.2/{options,codestyles} config/JetBrains/DataGrip2025.2/
+
+# Copy development tool configs
+cp ~/.config/starship.toml config/
+cp ~/.config/gh/config.yml config/gh/
+cp -r ~/.config/lazygit config/
+cp -r ~/.config/zellij config/
+cp -r ~/.config/mise config/
+cp ~/.config/mimeapps.list config/
 
 # Commit and push
 git add .
@@ -142,6 +174,11 @@ These dotfiles are configured for:
 - **DataGrip** - Database IDE
 - **btop** - System monitor
 - **fastfetch** - System info
+- **Starship** - Cross-shell prompt
+- **GitHub CLI (gh)** - GitHub from terminal
+- **lazygit** - Git terminal UI
+- **zellij** - Terminal multiplexer
+- **mise** - Runtime version manager
 
 Install missing applications:
 ```bash
@@ -160,6 +197,26 @@ sudo apt install btop
 sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
 sudo apt update
 sudo apt install fastfetch
+
+# Starship prompt
+curl -sS https://starship.rs/install.sh | sh
+
+# GitHub CLI
+sudo apt install gh
+
+# lazygit
+LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
+curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
+tar xf lazygit.tar.gz lazygit
+sudo install lazygit /usr/local/bin
+
+# zellij
+cargo install --locked zellij
+# or
+sudo apt install zellij
+
+# mise
+curl https://mise.run | sh
 ```
 
 ## Theme
@@ -204,13 +261,20 @@ OmakubDotfiles/
 │   ├── nvim/               # Neovim editor config
 │   ├── Code/               # VS Code settings
 │   ├── Cursor/             # Cursor editor settings
-│   └── JetBrains/          # DataGrip IDE config
+│   ├── JetBrains/          # DataGrip IDE config
+│   ├── gh/                 # GitHub CLI config
+│   ├── lazygit/            # lazygit TUI config
+│   ├── zellij/             # zellij multiplexer config
+│   ├── mise/               # mise version manager config
+│   ├── starship.toml       # Starship prompt config
+│   └── mimeapps.list       # Default file associations
 ├── home/
 │   ├── .bashrc             # Bash configuration
 │   ├── .gitconfig          # Git configuration
 │   ├── .profile            # Shell profile
 │   ├── .inputrc            # Readline config
 │   ├── .XCompose           # Compose key sequences
+│   ├── .npmrc              # NPM configuration
 │   └── *.sh                # Utility scripts
 ├── install.sh              # Installation script
 ├── .gitignore              # Git ignore rules

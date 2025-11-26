@@ -14,7 +14,7 @@ echo "Backup directory created at $BACKUP_DIR"
 
 # Backup existing dotfiles
 echo "Backing up existing dotfiles..."
-for file in .bashrc .gitconfig .profile .inputrc .XCompose; do
+for file in .bashrc .gitconfig .profile .inputrc .XCompose .npmrc; do
     if [ -f ~/"$file" ]; then
         cp ~/"$file" "$BACKUP_DIR/"
         echo "  Backed up $file"
@@ -28,6 +28,7 @@ cp home/.gitconfig ~/
 cp home/.profile ~/
 cp home/.inputrc ~/
 cp home/.XCompose ~/
+[ -f home/.npmrc ] && cp home/.npmrc ~/
 echo "  Dotfiles installed"
 
 # Copy utility scripts
@@ -40,7 +41,7 @@ echo "  Scripts installed"
 echo "Installing config directories..."
 mkdir -p ~/.config
 
-for dir in alacritty btop fastfetch Code Cursor nvim JetBrains; do
+for dir in alacritty btop fastfetch Code Cursor nvim JetBrains gh lazygit zellij mise; do
     if [ -d "config/$dir" ]; then
         # Backup existing config
         if [ -d ~/.config/"$dir" ]; then
@@ -52,6 +53,11 @@ for dir in alacritty btop fastfetch Code Cursor nvim JetBrains; do
         echo "  Installed config/$dir"
     fi
 done
+
+# Install standalone config files
+echo "Installing additional configs..."
+[ -f config/starship.toml ] && cp config/starship.toml ~/.config/
+[ -f config/mimeapps.list ] && cp config/mimeapps.list ~/.config/
 
 echo ""
 echo "Installation complete!"
