@@ -1,7 +1,7 @@
 # Yazi Keymap Configuration
 # Custom keybindings for yazi file manager
 
-[manager]
+[mgr]
 # Navigation
 prepend_keymap = [
 	{ on = ["<Esc>"], run = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },

@@ -1,7 +1,7 @@
 # Yazi Configuration
 # File manager settings
 
-[manager]
+[mgr]
 # Layout
 layout         = [1, 4, 3]
 sort_by        = "natural"
