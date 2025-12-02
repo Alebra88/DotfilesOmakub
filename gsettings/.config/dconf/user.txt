@@ -41,7 +41,7 @@ window-size=(948, 1152)
 word-size=64
 
 [org/gnome/control-center]
-last-panel='power'
+last-panel='keyboard'
 window-state=(470, 572, false)
 
 [org/gnome/deja-dup]
@@ -343,7 +343,7 @@ last-folder-path='/home/alexander/Downloads'
 night-light-enabled=false
 
 [org/gnome/settings-daemon/plugins/media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/']
 next=['<Shift>AudioPlay']
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
@@ -357,12 +357,12 @@ command='sh -c -- "flameshot gui"'
 name='Flameshot'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10]
-binding=''
+binding='<Shift><Super>t'
 command='/home/alexander/launch_or_focus_terminal.sh'
 name='Launch or Focus Terminal'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11]
-binding='<Super><Shift>m'
+binding='<Shift><Super>m'
 command='spotify'
 name='Spotify'
 
@@ -392,7 +392,7 @@ command='code -r'
 name='VSCODE'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
-binding='<Shift><Super>t'
+binding=''
 command='alacritty'
 name='New Alacritty Window'
 
