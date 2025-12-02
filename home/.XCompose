@@ -1,5 +1,0 @@
-include "%H/.local/share/omakub/defaults/xcompose"
-
-# Identification
-<Multi_key> <space> <n> : ""
-<Multi_key> <space> <e> : ""

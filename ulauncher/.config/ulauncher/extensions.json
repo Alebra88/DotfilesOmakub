@@ -1,0 +1,58 @@
+{
+    "com.github.ulauncher.ulauncher-emoji": {
+        "id": "com.github.ulauncher.ulauncher-emoji",
+        "url": "https://github.com/Ulauncher/ulauncher-emoji",
+        "updated_at": "2025-08-16T19:15:24.513277",
+        "last_commit": "af5806625e361ca4519b99755ccf0a557c1e894a",
+        "last_commit_time": "2025-06-03T19:05:58"
+    },
+    "com.github.ulauncher.ulauncher-kill": {
+        "id": "com.github.ulauncher.ulauncher-kill",
+        "url": "https://github.com/Ulauncher/ulauncher-kill",
+        "updated_at": "2025-08-16T19:37:23.726784",
+        "last_commit": "00ffe8266dbb6c2aea7d86a6363e51cec4b1981f",
+        "last_commit_time": "2022-11-26T16:15:05"
+    },
+    "com.github.ulauncher.ulauncher-timer": {
+        "id": "com.github.ulauncher.ulauncher-timer",
+        "url": "https://github.com/ulauncher/ulauncher-timer",
+        "updated_at": "2025-08-16T19:37:46.975009",
+        "last_commit": "2d3fe82fe1e38670e6eb8887cd2a4b4d1c2baa79",
+        "last_commit_time": "2023-03-25T08:07:41"
+    },
+    "com.github.brpaz.ulauncher-github": {
+        "id": "com.github.brpaz.ulauncher-github",
+        "url": "https://github.com/brpaz/ulauncher-github",
+        "updated_at": "2025-08-16T19:38:05.453754",
+        "last_commit": "c2a4d8f651c326c13290eb9e28c076f14aaac704",
+        "last_commit_time": "2022-10-15T10:36:52"
+    },
+    "com.github.grifthedev.ulauncher-t3chat": {
+        "id": "com.github.grifthedev.ulauncher-t3chat",
+        "url": "https://github.com/GrifTheDev/ulauncher-t3chat",
+        "updated_at": "2025-12-01T08:46:18.100703",
+        "last_commit": "50b72b3b4660404bc449dc6a9354463d577c7d1c",
+        "last_commit_time": "2025-11-29T16:45:34"
+    },
+    "com.github.tobineben.ulauncher-bluetooth-connection-toggle": {
+        "id": "com.github.tobineben.ulauncher-bluetooth-connection-toggle",
+        "url": "https://github.com/TobiNeben/ulauncher-bluetooth-connection-toggle",
+        "updated_at": "2025-12-01T08:46:59.181244",
+        "last_commit": "9c30c8e42f0054aba9adb6015a8f5a8846fc457e",
+        "last_commit_time": "2025-11-02T19:05:34"
+    },
+    "com.github.damian-ds7.ulauncher-flathub-manager": {
+        "id": "com.github.damian-ds7.ulauncher-flathub-manager",
+        "url": "https://github.com/damian-ds7/ulauncher-flathub-manager",
+        "updated_at": "2025-12-01T08:47:30.834159",
+        "last_commit": "f8cd0a8e26bb3b64ca49d481f09520610dd7a9ab",
+        "last_commit_time": "2025-08-28T21:37:01"
+    },
+    "com.github.1jehuang.claude-code-ulauncher-extension": {
+        "id": "com.github.1jehuang.claude-code-ulauncher-extension",
+        "url": "https://github.com/1jehuang/Claude-Code-ULauncher-Extension",
+        "updated_at": "2025-12-01T08:48:22.549970",
+        "last_commit": "fe2352868cd14484a4b34968b2eb32e9a7b3155d",
+        "last_commit_time": "2025-07-28T07:51:57"
+    }
+}

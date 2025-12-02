@@ -1,0 +1,38 @@
+# swhkd configuration file
+# Caps Lock is mapped to mod5 by keyd.
+# Chained commands were not working, so this file uses direct key combinations.
+
+# Application Launcher
+# mod5 + t
+mod5 + t
+    alacritty
+# mod5 + w
+mod5 + w
+    firefox
+# mod5 + f
+mod5 + f
+    thunar
+
+# Window Management
+# mod5 + q
+mod5 + q
+    swaymsg kill
+
+# System Actions
+# mod5 + s
+mod5 + s
+    grim -g "$(slurp)"
+# mod5 + l
+mod5 + l
+    swaylock
+
+# Volume Control
+# mod5 + Up
+mod5 + Up
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+# mod5 + Down
+mod5 + Down
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+# mod5 + m
+mod5 + m
+    pactl set-sink-mute @DEFAULT_SINK@ toggle

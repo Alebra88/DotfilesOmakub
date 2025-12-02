@@ -1,0 +1,4 @@
+! Remap Caps Lock to F13 for sxhkd chain mode
+! This allows Caps Lock to work as a leader key (tap and release)
+clear Lock
+keycode 66 = F13 F13 F13 F13

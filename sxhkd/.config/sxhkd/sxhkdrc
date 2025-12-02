@@ -1,0 +1,120 @@
+#
+# sxhkd configuration - Converted from Leaderkey
+# Leader key: Caps Lock (remapped to F13)
+#
+# Caps Lock is remapped to F13 for chain mode functionality.
+# This allows tap-and-release behavior like Leaderkey on macOS.
+#
+
+# ============================================
+# DIRECT LEADER KEY BINDINGS (single key after leader)
+# ============================================
+
+# Leader + t: Open Terminal
+F13 ; t
+    alacritty
+
+# Leader + a: Open Claude (web version)
+F13 ; a
+    xdg-open "https://claude.ai"
+
+# Leader + v: Open Visual Studio Code
+F13 ; v
+    code
+
+# Leader + b: Open Brave Browser
+F13 ; b
+    brave-browser
+
+# Leader + comma: Open System Settings
+F13 ; comma
+    gnome-control-center
+
+# ============================================
+# LEADER + O GROUP (Open applications)
+# ============================================
+
+# Leader + o + s: Safari -> Firefox
+F13 ; o ; s
+    firefox
+
+# Leader + o + e: Mail -> Thunderbird
+F13 ; o ; e
+    thunderbird
+
+# Leader + o + i: Music -> Spotify
+F13 ; o ; i
+    spotify
+
+# Leader + o + m: Messages -> Telegram
+F13 ; o ; m
+    telegram-desktop
+
+# ============================================
+# LEADER + B GROUP (Browser/Web)
+# ============================================
+
+# Leader + b + y: Open YouTube
+F13 ; b ; y
+    xdg-open "https://youtube.com"
+
+# Leader + b + f: Open Facebook
+F13 ; b ; f
+    xdg-open "https://facebook.com"
+
+# Leader + b + a: Open browser
+F13 ; b ; a
+    firefox
+
+# Leader + b + g: Open Gmail
+F13 ; b ; g
+    xdg-open "https://mail.google.com/mail/u/0/#inbox"
+
+# ============================================
+# LEADER + L GROUP (Lock/System)
+# ============================================
+
+# Leader + l + .: Lock screen
+F13 ; l ; period
+    loginctl lock-session
+
+# ============================================
+# LEADER + S GROUP (Spotify controls)
+# ============================================
+
+# Leader + s + p: Pause
+F13 ; s ; p
+    playerctl -p spotify pause
+
+# Leader + s + space: Play
+F13 ; s ; space
+    playerctl -p spotify play
+
+# Leader + s + a: Open Spotify
+F13 ; s ; a
+    spotify
+
+# Leader + s + n: Next track
+F13 ; s ; n
+    playerctl -p spotify next
+
+# ============================================
+# LEADER + R GROUP (Raycast equivalents - using rofi/dmenu)
+# ============================================
+
+# Leader + r + e: Emoji picker (using rofi emoji)
+F13 ; r ; e
+    rofi -show emoji -modi emoji
+
+# Leader + r + c: Open camera/cheese
+F13 ; r ; c
+    gnome-cheese
+
+# ============================================
+# SPECIAL KEYS
+# ============================================
+
+# Leader + æ: Clipboard history (using copyq or clipman)
+# Note: Install copyq or clipman for this functionality
+F13 ; ae
+    copyq show
